@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@400;700&display=swap');
+body{
+    font-family: 'Lora', serif;
+}
+hr{
+    border: 1px solid grey;
+    box-shadow: 3px 3px 3px grey;
+}
+.border-input-error{
+    border: 2px solid red;
+}
+.border-input-ok{
+    border: 2px solid green;
+}
+.border-input-error:focus{
+    border: 2px solid red;
+    box-shadow: 1px 1px 2px red;
+}
+.marcar-fila{
+    text-decoration: line-through;
+    color: green;
+}

@@ -1,19 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prueba 3 Front-End</title>
+    <link rel="stylesheet" href="./lib/bootstrap-5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./lib/bootstrap-5.3/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <h1>Consumir API</h1>
-    <hr>
-    <input onclick="mostrarTodo();" type="button" value="Get-API">
-    <input onclick="addSessionStorage();" type="button" value="SessionStorage">
-    <input onclick="obtenerSessionStorage();" type="button" value="ver-data-array">
-    <input onclick="eliminarSessionStorage();" type="button" value="Eliminar-Data-SessionStorage">
-    <script src="./index.js"></script>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Front End</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fin de la barra de navegacion -->
+    <!-- inicio de contenedor principal -->
+    <div class="container-fluid">
+        <div class="card mt-2">
+            <div class="card-header">
+                <h3>Datos API</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Agregar Datos</h2>
+                        <hr>
+                        <div class="mb-2">
+                            <label for="nombre">Nombre País</label>
+                            <input 
+                                type="text"
+                                id="nombre"
+                                placeholder="ingrese nombre del país"
+                                maxlength="15"
+                                class="form-control"
+                            >
+                            <span id="validNombre"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="capital">Capital</label>
+                            <input 
+                                type="text"
+                                id="capital"
+                                placeholder="ingrese nombre de la capital"
+                                maxlength="15"
+                                class="form-control"
+                            >
+                            <span id="validCapital"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label for="correo">Población</label>
+                            <input 
+                                type="number"
+                                id="poblacion"
+                                class="form-control"
+                                placeholder="ingrese población"
+                                maxlength="10"
+                                >
+                        </div>
+                        <div class="mb-2">
+                            <label for="capital">Código</label>
+                            <input 
+                                type="text"
+                                id="codigo"
+                                placeholder="ingrese código del pais"
+                                maxlength="3"
+                                class="form-control"
+                            >
+                        </div>
+                        <div class="mb-1">
+                            <input onclick="leerInputForm();" type="button" value="Guardar" class="btn btn-success">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Datos Consumidos</h2>                        
+                        <hr>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Capital</th>
+                                        <th>Población</th>
+                                        <th>Código</th>
+                                        <th>Opciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

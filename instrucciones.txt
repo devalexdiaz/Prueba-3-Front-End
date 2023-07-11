@@ -1,0 +1,15 @@
+Listado de Requerimientos del Sistema Web
+
+N°	Requerimiento
+1	Consumir un API. Puede utilizar la que desee, pero deben tener como mínimo 4 atributos, use la trabajada en clases u otra.
+2	Guardar los datos del API en un array
+3	Mostrar los datos del array en una tabla de HTML
+4	Diseñar tabla utilizando estilos de Bootstrap.
+5	La tabla html debe tener la opción de eliminar un elemento de array.
+6 	Diseñar barra de navegación utilizando estilos de Bootstrap.
+7	Crear un formulario que permita ingresar datos al array
+8	Diseña formulario utilizando estilos de Bootstrap.
+9	Los campos deben estar validados utilizando JavaScript
+10	Mantiene en las diferentes versiones del proyecto. Deben tener una rama principal y dos ramas segundarias.  Este punto será solicitado por el docente
+11	Mantener en GitHub las diferentes versiones. 
+12	Implementar buenas prácticas de programación como; comentarios, sin código de proyectos anteriores que no son utilizados, crear archivos y variables con nombres acorde con el contexto.
